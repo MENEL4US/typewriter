@@ -1,3 +1,12 @@
+/**
+ * https://github.com/MENEL4US/typewriter 
+ * 
+ * Luiz Mendes
+ * https://www.linkedin.com/in/luiz-mendes-dev/
+ * 
+ * Florianópolis, SC. Brazil
+ * 2022-03-26
+ */
 (function() {
     "use strict";
     const elements = document.getElementsByClassName("typewriter");

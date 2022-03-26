@@ -31,8 +31,6 @@ Basta utilizar a classe "typewriter" em qualquer elemento que contenha um texto,
 <p class="typewriter">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, libero aut!</p>
 ```
 
-![alt text](https://raw.githubusercontent.com/MENEL4US/typewriter/gif.gif)
-
 ## License
 
 MIT
