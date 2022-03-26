@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TYPEWRITER</title>
+
+    <style>
+        h1::after {
+            content: '|';
+            margin-left: 10px;
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
+
+    <script>
+        const element = document.querySelector('h1');
+
+        const text = element.innerHTML.split('');
+
+        element.innerHTML = '';
+
+        text.forEach((c, i) => {
+
+            setTimeout(() => {
+                element.innerHTML += c;
+            }, 100 * i);
+        })
+    </script>
+</body>
+
+</html>
