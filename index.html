@@ -5,47 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TYPEWRITER</title>
+    <title>TYPEWRITER - Example</title>
 
-    <style>
-        h1::after {
-            content: '|';
-            margin-left: 10px;
-            animation: blink 1s infinite;
-        }
-        
-        @keyframes blink {
-            0% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="typewriter.css">
 </head>
 
 <body>
 
-    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
+    <h1 class="typewriter">Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
 
-    <script>
-        const element = document.querySelector('h1');
+    <h2 class="typewriter">Lorem, ipsum dolor.</h2>
 
-        const text = element.innerHTML.split('');
+    <h3 class="typewriter">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
 
-        element.innerHTML = '';
+    <p class="typewriter">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, libero aut!</p>
 
-        text.forEach((c, i) => {
-
-            setTimeout(() => {
-                element.innerHTML += c;
-            }, 100 * i);
-        })
-    </script>
+    <script src="typewriter.js"></script>
 </body>
 
 </html>
