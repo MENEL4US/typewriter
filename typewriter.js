@@ -4,7 +4,6 @@
  * Luiz Mendes
  * https://www.linkedin.com/in/luiz-mendes-dev/
  * 
- * 
  * Florianópolis, SC. Brazil
  * 2022-03-26
  */
