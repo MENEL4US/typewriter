@@ -16,7 +16,7 @@
 })();
 
 function typeWriter(element) {
-    const text = element.innerHTML.split('');
+    const text = element.innerHTML.split('').trim();
     element.innerHTML = '';
     text.forEach((c, i) => {
         setTimeout(() => {
